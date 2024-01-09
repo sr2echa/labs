@@ -113,7 +113,7 @@ function drawSVG() {
   path?.setAttribute('d', screenPath.toString());
 }
 
-const timers: ReturnType<typeof setInterval>[] = [];
+const timers = [];
 
 [setScreenDetails, displayStats, removeOld, drawSVG].forEach(func => {
   timers.push(setInterval(func, 10));
