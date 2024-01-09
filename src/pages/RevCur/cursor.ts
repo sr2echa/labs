@@ -41,8 +41,8 @@ export function reverseCursor() {
 function simulateClick(x, y) {
     let elements = document.elementsFromPoint(x, y);
     for (let elem of elements) {
-        if (elem.click && elem.classList.contains('box')) {
-            elem.click();
+        if ((elem as HTMLElement).click && elem.classList.contains('box')) {
+            (elem as HTMLElement).click();
             break;
         }
     }
