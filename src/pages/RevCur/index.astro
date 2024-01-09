@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RevCur</title>
+    <link rel="stylesheet" href="/src/pages/RevCur/game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script type="module" src="/src/pages/RevCur/script.ts"></script>
+</head>
+<body>
+    <div id="startScreen">Press S to Start</div>
+    <div id="gameScreen" style="display: none;">
+        <div id="timer"></div>
+        <div id="scoreDisplay"></div>
+    </div>
+    <div id="scoreScreen" style="display: none;">
+        <div id="finalScore">
+            <span>Your Score</span>
+            <br/>
+            <span id="score"></span>
+        </div>
+        <div id="restartText">Press R to Restart</div>
+    </div>
+    <div id="sandboxMode" style="display: none;">
+        <div id="sandboxModeText">Sandbox Mode</div>
+    </div>
+</body>
+</html>

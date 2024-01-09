@@ -1,0 +1,30 @@
+---
+import experiments from '/public/experiments.json';
+import '/src/styles/index.css';
+
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sr2echa's Lab</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">sr2echa's Lab</h1>
+    <p class="subtitle">Contains some coding experiments...</p>
+    <div class="experiments-list">
+      {experiments.map((experiment, index) => (
+        <a href={experiment.path} class="experiment" data-title={experiment.description}>
+          <span class="experiment-id">{String(index + 1).padStart(3, '0')}</span>
+          <span class="experiment-name">{experiment.name}</span>
+        </a>
+      ))}
+    </div>
+    <footer>
+      <p>&copy; {new Date().getFullYear()} </p>
+    </footer>
+  </div>
+</body>
+</html>

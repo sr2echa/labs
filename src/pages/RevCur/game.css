@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    color: grey;
+    font-family: 'Fira Code', monospace;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#gameScreen, #scoreScreen, #sandboxMode {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(132deg, #59CDE9 -11.69%, #0A2A88 97.64%);
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1.5px solid black;
+}
+
+#timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#scoreDisplay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#finalScore {
+    color: white;
+    font-size: 60px;
+    font-weight:bolder;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+
+}
+
+#finalScore span:first-child {
+    font-size: 20px;
+}
+
+#restartText {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+#sandboxMode {
+    background-color: white;
+}
+
+#sandboxModeText {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #e0e0e0;
+    padding: 12px;
+    /* background-color: #ebebeb;
+    border-radius: 8px; */
+}
+
+/* #customCursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black; 
+    border: 1px solid white;
+    border-radius: 10px;
+    pointer-events: none; 
+    cursor: none;
+} */
