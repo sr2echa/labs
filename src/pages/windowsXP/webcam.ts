@@ -95,11 +95,13 @@ function drawSVG() {
   const screens = getScreens();
   screens
     .map(([key, screen]) => {
+      if (typeof screen === 'string') return [key, screen];
       const x = screen.screenX + screen.width / 2;
       const y = screen.screenY + screen.height / 2;
       return [key, { ...screen, x, y }];
     })
     .forEach(([key, screen], i) => {
+      if (typeof screen === 'string') return;
       if (i === 0) {
         screenPath.moveTo(screen.x, screen.y);
       } else {
