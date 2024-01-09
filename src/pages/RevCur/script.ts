@@ -1,4 +1,4 @@
-import { reverseCursor } from '/src/pages/RevCur/cursor.ts';
+import { reverseCursor } from './cursor.ts';
 
 let score = 0;
 let timer = null;
