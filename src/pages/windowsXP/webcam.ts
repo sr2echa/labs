@@ -1,13 +1,13 @@
 
 if (typeof window !== 'undefined') {
     class drawPath {
-    private d: string = '';
+      private d: string = '';
 
-    moveTo(x: number, y: number): this { return (this.d += `M${x} ${y} `, this); }
-    lineTo(x: number, y: number): this { return (this.d += `L${x} ${y} `, this); }
-    closePath(): this { return (this.d += 'Z ', this); }
-    toString(): string { return this.d.trim(); }
-    clear(): this { return (this.d = '', this); }  
+      moveTo(x: number, y: number): this { return (this.d += `M${x} ${y} `, this); }
+      lineTo(x: number, y: number): this { return (this.d += `L${x} ${y} `, this); }
+      closePath(): this { return (this.d += 'Z ', this); }
+      toString(): string { return this.d.trim(); }
+      clear(): this { return (this.d = '', this); }  
   }
 
   const stats = document.querySelector<HTMLPreElement>('.stats');
